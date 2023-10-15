@@ -9,7 +9,6 @@
     src: url('./Kingthings_Petrock.ttf');
 }
 .r{
-    height: 80vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -21,7 +20,7 @@
     padding-bottom: 10vh;
 }
 .h{
-    margin: 0 10% 30px;
+    margin: 20px 10% 30px;
     width: 80vw;
     height: 300px;
     text-align: center;
@@ -31,35 +30,35 @@
 }
 .n{
     margin-left: 10%;
-    height: 60vh;
+    height: 90vh;
     width: 20%;
     position: sticky;
     top: 5vh;
+
 }
 .np{
     margin-top: 5vh;
-    height: 50vh;
+    height: 80vh;
     width: 100%;
     font-size: 10px;
     overflow-y: auto;
     padding-right: 50px;
-    font-size: 50px;
     padding-left: 20%;
+    font-size: 50px;
 }
 .m{
-    height: 30vh;
     width: calc(60% - 30px);
     margin-left: 30px;
-    overflow: scroll;
 }
 .h, .n, .m {
     background-color: blanchedalmond;
     border-style: solid;
-    border-image-source: url('./borders.png');
+    border-image-source: url('./borrdersWideCorner.png');
     border-image-repeat: repeat;
-    border-image-width: 30px;
-    border-image-slice: 27 fill;
-    border-radius: 10px;
+    border-image-slice:45 45 45 45;
+border-image-width:20px 20px 20px 20px;
+border-image-outset: 10px    /* border-image-width: 30px;
+    border-image-slice: 27 fill; */
 }
 .np::-webkit-scrollbar {
     height: 0;
@@ -68,8 +67,7 @@
    width: 15px;
 }
 ::-webkit-scrollbar-track {
-    background-color: rgba(205, 185, 155, 0.5);
-    
+    background-color: rgba(205, 185, 155, 1);    
 }
 ::-webkit-scrollbar-thumb {
     background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
@@ -83,16 +81,20 @@
     height: 21px;
 }
 ::-webkit-scrollbar-button:vertical:end:increment {
-background-image: url('./scrollButtonDown.bmp');   
+    background-image: url('./scrollButtoDown.png') , radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%) ;
 }
 ::-webkit-scrollbar-button:vertical:start:decrement {
-background-image: url('./scrollButtonUp.bmp');   
+background-image: url('./scrollButtonUp.png') , radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%) ;
 } 
 ::-webkit-scrollbar-button:horizontal:end:increment {
-background-image: url('./scrollButtonRight.bmp');   
+background-image: url('./scrollButtonRight.png'), radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%) ;   
 }
 ::-webkit-scrollbar-button:horizontal:start:decrement {
-    background-image: url('./scrollButtonLeft.bmp');   
+    background-image: url('./scrollButtonLeft.png'), radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%) ;  
 } 
 @supports (scrollbar-color: rgba(255, 217, 0, 0.5) rgba(0, 0, 0, 0.164)) {
     *{
