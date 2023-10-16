@@ -43,7 +43,7 @@
 .np{
     margin-top: 5%;
     height: calc(100% - 55px);
-    width: 100%;
+    width: calc(100% + 4px);
     font-size: 10px;
     overflow-y: auto;
     padding-left: 20%;
@@ -62,11 +62,11 @@
     border-image-source: url('./borrdersWideCorner.png');
     border-image-repeat: repeat;
     border-image-slice: 46;
-    border-image-width: 60px;
+    border-image-width: 55px;
     border-image-outset: 20px; 
 }
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 17px;
     height: 15px;
  }
 .np::-webkit-scrollbar {
@@ -80,6 +80,7 @@
 .np::-webkit-scrollbar-track {
     background-image: none;
    background-color: rgba(255, 235, 205, 0.37);
+   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
     background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
